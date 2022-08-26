@@ -1,0 +1,9 @@
+# ignore everything
+/*
+/*/
+
+# ...but these:
+!/.gitignore
+!/README.md
+!/init.vim
+!/lua/
