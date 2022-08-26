@@ -67,4 +67,8 @@ local config = {
 	},
 }
 
+-- keymaps
+vim.keymap.set("n", "ff", ":NvimTreeToggle<CR>", {noremap = true, silent = true})
+
+
 nvim_tree.setup(config)

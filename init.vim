@@ -14,3 +14,5 @@ lua require('core/themes')
 " 加载插件配置
 lua require('configs/filetree')
 lua require('configs/statusline')
+lua require('configs/bufferline')
+lua require('configs/treesitter')

@@ -31,6 +31,19 @@ return require('packer').startup(function(use)
 		},
 	}
 
+	-- buffer line
+	use {
+		'akinsho/bufferline.nvim',
+		tag = "v2.*",
+		requires = 'kyazdani42/nvim-web-devicons',
+	}
+
+	-- syntax highlight
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = function () require('nvim-treesitter.install').update({with_sync = true}) end
+	}
+
 	if packer_bootstrap then
 		require('packer').sync()
 	end
